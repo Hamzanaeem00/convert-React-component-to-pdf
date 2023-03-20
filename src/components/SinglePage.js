@@ -3,7 +3,12 @@ import DownloadPdf2 from './DownloadPdf2';
 
 const SinglePage = ({id}) => 
 (
+  
  <>
+ <div>
+<div>
+  {/* <input type='text' placeholder='search' /> */}
+</div>
   <div id={id}>
   <div className=''> CONVERT PAGE TO PDF </div>
         <p >When I first faced this issue, we had an analytics page, which we wanted to convert into a pdf. My instinct was to add a print.css file and let the browser handle all the dirty work. Long story short, this doesn’t work.
@@ -14,6 +19,7 @@ A better way is to render pdf directly on the frontend. The client side approach
 
 <div>
  <DownloadPdf2 id={"SinglePage"}  /> 
+ </div>
  </div>
 </>
 
